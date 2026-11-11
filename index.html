@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0c0d">
+  <meta name="description" content="Watch The Lazarus Protocol — Act I, a 13-minute short film from Creative Bandit Studios.">
+  <meta property="og:type" content="video.movie">
+  <meta property="og:title" content="The Lazarus Protocol — Act I">
+  <meta property="og:description" content="A short film. Act I. Watch now in the Creative Bandit Studios screening room.">
+  <meta property="og:image" content="https://creativebanditstudios-hub.github.io/lazarus-protocol-act1/assets/poster.jpg">
+  <meta property="og:url" content="https://creativebanditstudios-hub.github.io/lazarus-protocol-act1/">
+  <link rel="canonical" href="https://creativebanditstudios-hub.github.io/lazarus-protocol-act1/">
+  <title>The Lazarus Protocol — Act I | Creative Bandit Studios</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#watch">Skip to the film</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="studio" href="#top" aria-label="Creative Bandit Studios, back to top">
+        <span class="studio-mark" aria-hidden="true">CB<span>↗</span></span>
+        <span class="studio-name">Creative Bandit<span>Studios</span></span>
+      </a>
+      <span class="room-label"><span class="signal" aria-hidden="true"></span> The screening room</span>
+    </header>
+
+    <main id="top">
+      <section class="introduction" aria-labelledby="film-title">
+        <div class="film-intro">
+          <p class="eyebrow"><span>01</span> A short film</p>
+          <h1 id="film-title"><span class="title-lead">The Lazarus</span><span>Protocol<span class="title-dot">.</span></span></h1>
+          <div class="intro-bottom">
+            <p class="film-meta">Act I <span aria-hidden="true">/</span> 13 min 10 sec</p>
+            <a class="watch-button" href="#watch" id="watch-link"><svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M1 1v12l10-6z" fill="currentColor"/></svg> Watch the film <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="act-number" aria-hidden="true"><span>Act</span><strong>I</strong><span>The Lazarus Protocol</span></div>
+      </section>
+
+      <section class="screening" id="watch" aria-labelledby="screening-title">
+        <div class="screening-toolbar">
+          <h2 id="screening-title"><span class="signal" aria-hidden="true"></span> Now showing <span class="toolbar-divider" aria-hidden="true">/</span><span class="toolbar-title">Act I</span></h2>
+          <button class="text-button theatre-button" id="theatre-toggle" type="button" aria-pressed="false" aria-controls="film-player"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" aria-hidden="true"><rect x=".75" y=".75" width="14.5" height="11.5" rx="1.25" stroke="currentColor" stroke-width="1.5"/><path d="M4 4h8v5H4z" fill="currentColor" opacity=".45"/></svg><span>Theatre mode</span></button>
+        </div>
+        <div class="player-frame">
+          <video id="film-player" controls playsinline preload="metadata" poster="assets/poster.jpg" tabindex="0" aria-label="The Lazarus Protocol, Act I. Running time 13 minutes 10 seconds.">
+            <source src="assets/film.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="assets/film.mp4">Open the film directly</a>.
+          </video>
+        </div>
+        <div class="playback-error" id="playback-error" hidden role="status">
+          <p>The film couldn’t load in this player. <a href="assets/film.mp4">Open the video directly</a> or reload the page to try again.</p>
+        </div>
+        <div class="screening-details">
+          <p><span class="sound-icon" aria-hidden="true">◖</span> Sound on. Settle in.</p>
+          <div class="player-links"><a href="assets/film.mp4" class="text-button">Open video <span aria-hidden="true">↗</span></a><button id="share-button" class="text-button" type="button">Copy film link <span aria-hidden="true">↗</span></button></div>
+        </div>
+        <p id="player-status" class="player-status" role="status" aria-live="polite"></p>
+        <input id="share-address" class="share-address" type="text" readonly hidden aria-label="Film link to copy">
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>The Lazarus Protocol <span>—</span> Act I</p><p>Creative Bandit Studios</p><a href="#top" aria-label="Back to top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+</body>
+</html>
