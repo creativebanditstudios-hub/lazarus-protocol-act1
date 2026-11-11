@@ -13,7 +13,9 @@ A static screening page for Creative Bandit Studios. It runs directly on GitHub 
 
 ## GitHub Pages
 
-Publish the `main` branch from the repository root in **Settings → Pages → Deploy from a branch**. Keep the `assets` directory alongside `index.html`.
+The live page is https://creativebanditstudios-hub.github.io/lazarus-protocol-act1/ once deployment succeeds.
+
+Select **Settings → Pages → GitHub Actions** as the publishing source. The included `.github/workflows/pages.yml` publishes the site when `main` changes and can also be run manually. Keep the `assets` directory alongside `index.html`.
 
 The player uses H.264/AAC MP4, native browser controls, fullscreen controls, and inline playback on mobile. Playback begins only after a visitor chooses to watch. No tracking, remote scripts, external fonts, or account are required.
 
